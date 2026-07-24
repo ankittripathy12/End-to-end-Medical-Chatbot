@@ -6,7 +6,7 @@
 Clone the repository
 
 ```bash
-https://github.com/entbappy/End-to-End-Medical-Chatbot
+https://github.com/ankittripathy12/End-to-End-Medical-Chatbot
 ```
 
 ### STEP 01- Create a conda environment after opening the repository
@@ -29,7 +29,7 @@ pip install -r requirements.txt
 
 ```ini
 PINECONE_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-OPENAI_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+GROQ_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 ```
 
 
@@ -128,4 +128,4 @@ open up localhost:
    - AWS_DEFAULT_REGION
    - ECR_REPO
    - PINECONE_API_KEY
-   - OPENAI_API_KEY
+   - GROQ_API_KEY
