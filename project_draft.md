@@ -1,13 +1,13 @@
 # Project Draft: Medical Chatbot 
 
 ## 1. Project Overview
-This project involves building a **Medical Chatbot** capable of answering medical-related queries by leveraging **Retrieval-Augmented Generation (RAG)**. The system uses a knowledge base created from medical PDF documents, stores them as vector embeddings in **Pinecone**, and retrieves relevant information to generate accurate responses using **GPT-4o** via **LangChain**. The application is served using **Flask** and is designed for deployment on **AWS** using **Docker** and **GitHub Actions**.
+This project involves building a **Medical Chatbot** capable of answering medical-related queries by leveraging **Retrieval-Augmented Generation (RAG)**. The system uses a knowledge base created from medical PDF documents, stores them as vector embeddings in **Pinecone**, and retrieves relevant information to generate accurate responses using **llama-3.3-70b-versatile** via **LangChain**. The application is served using **Flask** and is designed for deployment on **AWS** using **Docker** and **GitHub Actions**.
 
 ## 2. Key Features
 - **RAG-based Question Answering**: Retrieves relevant context from a medical knowledge base to minimize hallucinations and provide accurate info.
 - **PDF Knowledge Base Integration**: Automatically loads and processes PDF documents from the `data/` directory.
 - **Efficient Vector Search**: Uses **Pinecone** for fast and scalable similarity search of embeddings.
-- **State-of-the-art LLM**: Integrates **GPT-4o** for high-quality natural language generation.
+- **State-of-the-art LLM**: Integrates **llama-3.3-70b-versatile** for high-quality natural language generation.
 - **Web Interface**: Simple and intuitive chat interface built with **HTML/CSS/JS** and served via **Flask**.
 - **CI/CD Pipeline**: Automated deployment pipeline using **GitHub Actions** to **AWS EC2** with **Docker**.
 
@@ -50,7 +50,7 @@ This project involves building a **Medical Chatbot** capable of answering medica
 - **Language**: Python 3.10
 - **Framework**: Flask
 - **Orchestration**: LangChain
-- **LLM**: GPT-4o (OpenAI)
+- **LLM**: 
 - **Vector Database**: Pinecone
 - **Embeddings**: HuggingFace (`all-MiniLM-L6-v2`)
 - **Deployment**: AWS (EC2, ECR), Docker, GitHub Actions
@@ -59,7 +59,7 @@ This project involves building a **Medical Chatbot** capable of answering medica
 
 ### Prerequisites
 - AWS Account (for deployment)
-- OpenAI API Key
+- GROQ API Key
 - Pinecone API Key
 
 ### Local Installation
@@ -77,7 +77,7 @@ This project involves building a **Medical Chatbot** capable of answering medica
     Create a `.env` file:
     ```ini
     PINECONE_API_KEY="your_api_key"
-    OPENAI_API_KEY="your_api_key"
+    GROQ_API_KEY="your_api_key"
     ```
 5.  **Index Data:**
     ```bash
